@@ -1,7 +1,7 @@
 @import './variables';
 @import './mixins';
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 
 body{
 	font-family: $FONT-BASE !important;
@@ -10,6 +10,9 @@ p{
 	line-height: 1.6;
 }
 
+.c-grey-dark{
+	color: $GREY-DARK;
+}
 .c-grey-semi-dark{
 	color: $GREY-SEMI-DARK;
 }
@@ -44,11 +47,36 @@ p{
 	font-family: $FONT-SERIF;
 	font-weight: 700;
 }
+.serif-regular{
+	font-family: $FONT-SERIF;
+	font-weight: 400;
+}
 
 .section-desc-lg{
-	font-size: 2.4rem;
+	font-size: 2.2rem;
 	color: $GREY-SEMI-DARK;
 	font-weight: 300;
+}
+.section-desc-md{
+	font-size: 1.8rem;
+}
+.section-header-md{
+	font-family: $FONT-BASE !important;
+	font-weight: 400;
+	color: $GREY-DARK;
+	font-size: 3.8rem;
+	position: relative;
+}
+.brand-hightlight-separator{
+	&:after{
+		content: '';
+	    position: absolute;
+		background: $BRAND-PRIMARY-LIGHT; 
+	    height: 7px;
+	    left: 0px;
+	    bottom: -15px;
+	    width: 60%;
+	}
 }
 
 .btn{
@@ -66,7 +94,7 @@ p{
 .landing-hero{
 	@media(min-width: 800px) {
 		max-width: 480px;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 }
 
@@ -132,7 +160,8 @@ p{
 
 
 
-
+.relative{position: relative !important;}
+.display-table{display: table !important;}
 .b0{bottom: 0px !important}
 .r0{right: 0px !important}
 .l0{left: 0px !important}
