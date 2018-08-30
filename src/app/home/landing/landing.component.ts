@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent {
 
-  showLoginModal: boolean = true;
+  showLoginModal: boolean = false;
 
   constructor() {
   }
