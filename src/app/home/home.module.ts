@@ -8,7 +8,7 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     // CoreModule,
     // SharedModule,
-    // BrowserModule,
+    BrowserModule,
     // FormsModule,
     // ReactiveFormsModule,
     HomeRoutingModule,

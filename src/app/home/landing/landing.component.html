@@ -35,3 +35,48 @@
 		</div>
 	</div>
 </div>
+
+	<section class="landing-listing-container mt70">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="brand-header brand-header-md serif-bold">The List</h1>
+				</div>
+			</div>
+
+			<!-- <div class="mt30 mb20">
+				<div class="row">
+					<div class="col-md-10">
+						<input type="text" class="form-control landing-search" placeholder="Search by name, skills or location..." name="">
+					</div>
+					<div class="col-md-2 align-right">
+						<a class="section-desc-md relative t15 normal-link">Filter by skill</a>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="row mt40 mb60">
+				<div class="col-md-4" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+					<div class="brand-card profile-card center mb25">
+						<img src="assets/img/dp.jpg" class="profile-card-dp circular mb15">
+						<h5 class="profile-card-header c-grey-dark mb5">Anoop Sethumadhavan</h5>
+						<p class="profile-card-desc c-grey-semi-dark mb5">Jr. Sorcerer & Developer at Kamar Taj</p>
+						<p class="profile-card-loc c-grey-no-dark">Bengaluru</p>
+						<div class="mt25">
+							<a class="skill-tag">HTML</a>
+							<a class="skill-tag">CSS</a>
+							<a class="skill-tag">Javascript</a>
+							<a class="skill-tag">Angular</a>
+							<a class="skill-tag">Django</a>
+						</div>
+						<div class="profile-card-cta-container">
+							<div class="row">
+								<a class="col-xs-6 btn btn-ghost normal-link" href="https://en.wikipedia.org/wiki/Doctor_Strange" target="_blank">Portfolio</a>
+								<a class="col-xs-6 btn btn-ghost normal-link">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

@@ -16,14 +16,20 @@ p{
 .c-grey-semi-dark{
 	color: $GREY-SEMI-DARK;
 }
+.c-grey-no-dark{
+	color: $GREY-NO-DARK;
+}
 .c-white{
 	color: $WHITE;
+}
+.normal-link, .normal-link:hover, .normal-link:visited, .normal-link:active{
+	color: $BRAND-PRIMARY-DARK !important; 
 }
 
 .brand-header {
 	font-family: $FONT-SERIF;
 	color: $GREY-DARK;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 6.2rem;
 	position: relative;
 	z-index: 10;
@@ -38,6 +44,9 @@ p{
 		background: $BRAND-PRIMARY-LIGHT; 
 		z-index: -1;
 	}
+}
+.brand-header-md{
+	font-size: 4rem;
 }
 .serif-extra-bold{
 	font-family: $FONT-SERIF;
@@ -85,17 +94,87 @@ p{
 	width: 100%;
 	border-radius: 0px !important;
 	font-size: 1.6rem !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+}
+.btn-primary{
 	background: $BRAND-PRIMARY !important;
 	border-color: $BRAND-PRIMARY !important;
 	color: $GREY-DARK !important;
-	font-weight: 700 !important;
-	text-transform: uppercase;
 }
 .landing-hero{
 	@media(min-width: 800px) {
 		max-width: 480px;
 		margin-top: 30px;
 	}
+}
+.brand-card{
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+	padding: 20px;
+	// border: 1px solid #eee;
+}
+.landing-listing-container{
+	background: #f0f5f4;
+	padding: 50px 0px;
+}
+.landing-search{
+	height: 56px !important;
+	font-size: 1.6rem !important;
+	box-shadow: none!important;
+}
+.align-right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.relative{
+	position: relative;
+}
+.circular{
+	border-radius: 50%;
+}
+.profile-card{
+	padding: 30px 20px 0px 20px;
+	.profile-card-dp{
+		height: 100px;
+		width: 100px;
+	}
+	.profile-card-header{
+		font-size: 2.1rem;
+	}
+	.profile-card-desc{
+		font-size: 1.6rem;
+	}
+	.profile-card-loc{
+		font-size: 1.6rem;
+	}
+	.profile-card-cta-container{
+		border-top: 1px solid #e0e0e0;
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-top: 20px;
+		.row{
+			margin: 0px;
+		}
+		.btn-ghost:first-child{
+			border-right: 1px solid #e0e0e0;
+		}
+		.btn-primary{
+			border-radius: 0px 0px 4px 0px !important;
+		}
+	}
+}
+.skill-tag, .skill-tag:hover{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 5px 10px 0px;
+	background: #f0f5f4;
+	color: #999;
+	padding: 7px 20px;
+	border-radius: 1000px;
 }
 
 
