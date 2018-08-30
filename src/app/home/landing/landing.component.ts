@@ -5,7 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './landing.component.html',
   // styleUrls: ['../../../assets/css/sidebar-section.scss', ]
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent {
+
+  showLoginModal: boolean = true;
+
   constructor() {
   }
 

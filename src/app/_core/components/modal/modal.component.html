@@ -1,0 +1,6 @@
+<div *ngIf="visible" class="brand-modal-outer-container" [@overlay]>
+  	<div class="brand-modal animated" [ngClass]="{'brand-modal-small': size=='small', 'brand-modal-md': size=='medium', 'brand-modal-lg': size=='large'}">
+  		<ng-content></ng-content>
+  	</div>
+  	<div class="brand-modal-overlay" (click)="close()"></div>
+</div>

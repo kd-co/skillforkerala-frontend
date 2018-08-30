@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CoreModule } from '../_core/core.module';
+
 import { LandingComponent } from './landing/landing.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   imports: [
-    // CoreModule,
+    CoreModule,
     // SharedModule,
     BrowserModule,
     // FormsModule,

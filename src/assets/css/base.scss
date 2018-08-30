@@ -22,6 +22,18 @@ p{
 .c-white{
 	color: $WHITE;
 }
+.sm-facebook{
+	background: #3B5998;
+}
+.sm-linkedin{
+	background: #0077B5;
+}
+.sm-twitter{
+	background: #41aded;
+}
+.sm-google{
+	background: #F14435;
+}
 .normal-link, .normal-link:hover, .normal-link:visited, .normal-link:active{
 	color: $BRAND-PRIMARY-DARK !important; 
 }
@@ -60,6 +72,9 @@ p{
 	font-family: $FONT-SERIF;
 	font-weight: 400;
 }
+.font-regular{
+	font-weight: 400;
+}
 
 .section-desc-lg{
 	font-size: 2.2rem;
@@ -68,6 +83,9 @@ p{
 }
 .section-desc-md{
 	font-size: 1.8rem;
+}
+.section-header-sm{
+	font-size: 1.6rem;
 }
 .section-header-md{
 	font-family: $FONT-BASE !important;
@@ -88,19 +106,32 @@ p{
 	}
 }
 
-.btn{
+.btn {
 	padding: 15px !important;
 	display: block;
 	width: 100%;
 	border-radius: 0px !important;
 	font-size: 1.6rem !important;
-	font-weight: 700 !important;
+	font-weight: 500 !important;
 	text-transform: uppercase;
+	box-shadow: none;
+	border-radius: 4px !important;
+}
+.btn:focus, .btn:active{
+	box-shadow: none !important;
 }
 .btn-primary{
 	background: $BRAND-PRIMARY !important;
 	border-color: $BRAND-PRIMARY !important;
 	color: $GREY-DARK !important;
+}
+.btn-sm{
+	color: #fff;
+	text-transform: none;
+	font-weight: 400 !important;
+	&:hover{
+		color: #fff !important;
+	}
 }
 .landing-hero{
 	@media(min-width: 800px) {
@@ -176,7 +207,51 @@ p{
 	padding: 7px 20px;
 	border-radius: 1000px;
 }
-
+.brand-modal-outer-container{
+	display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.brand-modal {
+  z-index: 9999999;
+  max-width: 520px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 50px auto;
+  position: relative;
+}
+.brand-modal-overlay{
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.brand-modal-sm{
+	max-width: 440px;
+}
+.brand-modal-md{
+	max-width: 640px;
+}
+.brand-modal-lg{
+	max-width: 720px;
+}
+.modal-body{
+	padding: 20px !important;
+}
+input[type="text"].form-control{
+	height: 44px;
+	border-radius: 4px;
+	box-shadow: none;
+	border-color: #d0d0d0;
+}
 
 
 
@@ -374,6 +449,7 @@ p{
 .pl60{padding-left:60px !important;}
 .pr10{padding-right:10px !important;}
 .pr15{padding-right:15px !important;}
+.pr7{padding-right:7px !important;}
 .pr40{padding-right:40px !important;}
 .pr70{padding-right:70px !important;}
 .pl15{padding-left:15px !important;}
@@ -384,6 +460,7 @@ p{
 .pl20{padding-left:20px !important;}
 .pl25{padding-left:25px !important;}
 .pl10{padding-left:10px !important;}
+.pl7{padding-left:7px !important;}
 .pl0{padding-left:0px !important;}
 .pr0{padding-right:0px !important;}
 .pt0{padding-top: 0px !important}

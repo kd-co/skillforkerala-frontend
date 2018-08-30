@@ -13,7 +13,7 @@
 			</div>
 			<div class="row mt30">
 				<div class="col-md-5">
-					<a class="btn btn-primary">
+					<a class="btn btn-primary" (click)="showLoginModal=true">
 						Pledge your time
 					</a>
 				</div>
@@ -72,7 +72,7 @@
 						<div class="profile-card-cta-container">
 							<div class="row">
 								<a class="col-xs-6 btn btn-ghost normal-link" href="https://en.wikipedia.org/wiki/Doctor_Strange" target="_blank">Portfolio</a>
-								<a class="col-xs-6 btn btn-ghost normal-link">Contact</a>
+								<a class="col-xs-6 btn btn-ghost normal-link" (click)="showLoginModal=true">Contact</a>
 							</div>
 						</div>
 					</div>
@@ -80,3 +80,42 @@
 			</div>
 		</div>
 	</section>
+
+
+
+<modal [(visible)]="showLoginModal" [size]="'small'">
+    <div class="modal-body pt30">
+		<div class="row">
+			<div class="col-md-12">
+    			<h2 class="section-header-sm font-regular c-grey-semi-dark m0 mb20">Connect with social networks</h2>
+			</div>
+			<div class="col-xs-6 pr7">
+				<a class="btn btn-sm sm-google center mb20">Connect with Google</a>
+			</div>
+			<div class="col-xs-6 pl7">
+				<a class="btn btn-sm sm-facebook center">Connect with Facebook</a>
+			</div>
+			<div class="col-md-12 mt15">
+    			<h2 class="section-header-sm m0 font-regular mb20 c-grey-semi-dark">Or Signup with email</h2>
+			</div>
+			<div class="col-xs-6 pr7">
+				<input type="text" class="form-control mb15" placeholder="First name" name="">
+			</div>
+			<div class="col-xs-6 pl7">
+				<input type="text" class="form-control mb15" placeholder="Last name" name="">
+			</div>	
+			<div class="col-xs-6 pr7">
+				<input type="text" class="form-control mb15" placeholder="Email address" name="">
+			</div>
+			<div class="col-xs-6 pl7">
+				<input type="text" class="form-control mb15" placeholder="Password" name="">
+			</div>	
+			<div class="col-xs-12">
+				<a class="btn btn-primary">Sign me up</a>
+			</div>
+			<!-- <div class="col-xs-12 mt20 center">
+				<a class="section-header-sm c-grey-semi-dark">Already a member? Log in</a>
+			</div> -->			
+		</div>    	
+    </div>
+</modal>
