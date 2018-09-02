@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var google: any;
+
 @Component({
   selector: 'app-pledge',
   templateUrl: './pledge.component.html',
@@ -19,6 +21,12 @@ export class PledgeComponent {
 
   ngOnInit(): void {
 
+  }
+
+  ngAfterViewInit(){
+  	var input = document.getElementById('pledge-location');
+  	new google.maps.places.Autocomplete(input);
+  	// google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 	increaseArrayElement(e) {

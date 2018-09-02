@@ -1,4 +1,4 @@
-<div class="container animated fadeIn fast">
+<div class="container mb60 animated fadeIn fast">
 	<div class="row">
 		<div class="col-md-12">
 			<h1 class="brand-header brand-header-md serif-bold">The Pledge</h1>
@@ -17,7 +17,8 @@
 			I, 
 			<input type="text" (focus)="showHelpText('Your name. This would be used for all the further communications.')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-name" placeholder="Anoop Sethumadhavan" name="">, a
 			<input type="text" (focus)="showHelpText('How would you best describe yourself?')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-bio" placeholder="Product Designer" name=""> based out of
-			<input type="text" (focus)="showHelpText('Where are you based out of? This\'ll be helpful in onsite projects.')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-location" placeholder="Bengaluru" name="">,
+			<input type="text" class="pledge-desc-input" placeholder="Bengaluru, Karnataka, India" ngx-google-places-autocomplete #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)" id="pledge-location" />,
+			<!-- <input type="text" (focus)="showHelpText('Where are you based out of? This\'ll be helpful in onsite projects.')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-location" placeholder="Bengaluru" name="">, -->
 			pledge that I'm ready to donate 
 			<input type="number" (focus)="showHelpText('How many hours are you willing to donate to the cause?')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-hours" placeholder="120" name=""> 
 			hours of my expertise in the following field(s) and contribute the earning towards the cause of Rebuilding Kerala.</p>

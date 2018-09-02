@@ -271,6 +271,18 @@ input[type="text"].form-control{
 	cursor: pointer;
 }
 
+.pac-item {
+    padding: 8px 12px !important;
+    font-size: 1.6rem !important;
+}
+.pac-item-query{
+    font-size: 1.6rem !important;
+}
+.hdpi.pac-logo:after {
+    display: none;
+    background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png);
+}
+
 
 
 
