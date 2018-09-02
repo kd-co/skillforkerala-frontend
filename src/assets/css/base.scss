@@ -1,5 +1,7 @@
 @import './variables';
 @import './mixins';
+@import './icon-styles';
+@import './animate';
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 
@@ -33,6 +35,10 @@ p{
 }
 .sm-google{
 	background: #F14435;
+}
+a, a:hover{
+	cursor: pointer !important;
+	text-decoration: none !important;
 }
 .normal-link, .normal-link:hover, .normal-link:visited, .normal-link:active{
 	color: $BRAND-PRIMARY-DARK !important; 
@@ -155,6 +161,9 @@ p{
 	font-size: 1.6rem !important;
 	box-shadow: none!important;
 }
+.block{
+	display: block;
+}
 .align-right{
 	text-align: right;
 }
@@ -251,6 +260,15 @@ input[type="text"].form-control{
 	border-radius: 4px;
 	box-shadow: none;
 	border-color: #d0d0d0;
+}
+.hidden-file-input{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0;
+	cursor: pointer;
 }
 
 

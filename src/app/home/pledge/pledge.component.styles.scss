@@ -1,0 +1,114 @@
+
+.pledge-dp{
+	width: 260px;
+	height: 260px;
+}
+.pledge-dp-placeholder{
+	border: 2px dashed #ccc;
+	background: #fafafa;
+	display: table;
+}
+.pledge-dp-placeholder-content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.pledge-dp-placeholder-text{
+	color: #bbb;
+	font-size: 1.8rem;
+	display: block;
+}
+.pledge-dp-placeholder [class*="icon"]{
+	color: #ddd;
+	font-size: 5rem;
+	text-decoration: none;
+}
+.pledge-desc{
+	font-weight: 300;
+	font-size: 2.6rem;
+	line-height: 1.9;
+	color: #333;
+}
+input[type="text"].pledge-desc-input, input[type="number"].pledge-desc-input{
+	border: none;
+	//border-bottom: 2px dotted #ccc;
+	height: 32px;
+	outline: none;
+	margin: 0px 5px;
+	width: auto;
+	color: #333;
+	&::placeholder{
+		color: #ccc;
+	}
+	&:focus{
+		border-bottom: 2px solid #50e3c2;
+	}
+}
+.pledge-desc-select-container ol, .pledge-desc-select-container ul{
+	margin-left: 0px;
+	padding-left: 25px;
+}
+select.pledge-desc-input{
+	font-size: 2.6rem;
+	-webkit-appearance: none;
+    -moz-appearance : none;
+	border: none;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	height: 44px;
+	border-radius: 0px;
+	outline: none;
+	margin-bottom: 1rem;
+	&:focus{
+		border-bottom: 2px solid #50e3c2;
+	}
+	option:disabled{
+		color: #ccc;
+	}
+}
+.pledge-desc-select-add-new{
+	border: 1px solid #50e3c2;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #50e3c2;
+}
+.pledge-desc-select-delete{
+	border: 1px solid #aaa;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #aaa;
+}
+.pledge-desc-help-text{
+	color: #45c1a5;
+	font-size: 1.4rem;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	right: 0px;
+}
+
+#pledge-bio{
+	width: 205px;
+}
+#pledge-location{
+	width: 120px;
+}
+#pledge-hours{
+	width: 65px;
+}

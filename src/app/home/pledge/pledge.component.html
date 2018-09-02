@@ -1,0 +1,64 @@
+<div class="container animated fadeIn fast">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="brand-header brand-header-md serif-bold">The Pledge</h1>
+		</div>
+	</div>
+	<div class="row mt60">
+		<div class="col-md-8 pledge-desc-container c-grey-semi-dark">
+			<p class="pledge-desc relative">
+			<span class="pledge-desc-help-text mb15 animated fadeIn faster" *ngIf="helpText">
+				<span class="icon-info mr5"></span>
+				<span *ngIf="error"></span>
+				<span *ngIf="!error">
+					{{helpText}}
+				</span>
+			</span>
+			I, 
+			<input type="text" (focus)="showHelpText('Your name. This would be used for all the further communications.')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-name" placeholder="Anoop Sethumadhavan" name="">, a
+			<input type="text" (focus)="showHelpText('How would you best describe yourself?')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-bio" placeholder="Product Designer" name=""> based out of
+			<input type="text" (focus)="showHelpText('Where are you based out of? This\'ll be helpful in onsite projects.')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-location" placeholder="Bengaluru" name="">,
+			pledge that I'm ready to donate 
+			<input type="number" (focus)="showHelpText('How many hours are you willing to donate to the cause?')" (blur)="hideHelpText()" class="pledge-desc-input" id="pledge-hours" placeholder="120" name=""> 
+			hours of my expertise in the following field(s) and contribute the earning towards the cause of Rebuilding Kerala.</p>
+			<div class="pledge-desc pledge-desc-select-container mt20">
+				<ul>
+					<li class="animated fadeIn faster" *ngFor="let skill_item of array; let first = first; let last = last; let index = index">
+						<select class="pledge-desc-input">
+							<option selected disabled>Click to select a skill</option>
+							<option *ngFor="let skill of skills_list">{{skill}}</option>
+						</select>
+						<a *ngIf="!first" class="pledge-desc-select-delete circular center" (click)="deleteArrayElement(index)">
+							<span>-</span>
+						</a>
+						<a *ngIf="last" class="pledge-desc-select-add-new circular center" (click)="increaseArrayElement($event)">
+							<span>+</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-3 align-right">
+			<!-- <img src="assets/img/dp.jpg" class="pledge-dp circular"> -->
+			<a class="block pledge-dp pledge-dp-placeholder circular center relative">
+				<span class="pledge-dp-placeholder-content">
+					<span class="icon-camera"></span>
+					<span class="pledge-dp-placeholder-text mt10">Your picture</span>
+				</span>
+				<input type="file" class="hidden-file-input" name="">
+			</a>
+		</div>
+	</div>
+	<div class="row mt20">
+		<div class="col-md-3">
+			<a class="btn btn-primary">
+				Create account
+			</a>
+		</div>
+	</div>
+</div>
+
+
