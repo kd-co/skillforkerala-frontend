@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { HomeModule } from './home/home.module';
+import { UserModule } from './user/user.module';
 import { CoreModule } from './_core/core.module';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CoreModule } from './_core/core.module';
     BrowserModule,
     CommonModule,
     HomeModule,
+    UserModule,
     AppRoutingModule,
     CoreModule,
     FormsModule,

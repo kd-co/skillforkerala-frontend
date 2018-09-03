@@ -12,17 +12,20 @@ p{
 	line-height: 1.6;
 }
 
+.c-black{
+	color: $GREY-DARK !important;
+}
 .c-grey-dark{
-	color: $GREY-DARK;
+	color: $GREY-DARK !important;
 }
 .c-grey-semi-dark{
-	color: $GREY-SEMI-DARK;
+	color: $GREY-SEMI-DARK !important;
 }
 .c-grey-no-dark{
-	color: $GREY-NO-DARK;
+	color: $GREY-NO-DARK !important;
 }
 .c-white{
-	color: $WHITE;
+	color: $WHITE !important;
 }
 .sm-facebook{
 	background: #3B5998;
@@ -80,6 +83,9 @@ a, a:hover{
 }
 .font-regular{
 	font-weight: 400;
+}
+.font-bold{
+	font-weight: 500 !important;
 }
 
 .section-desc-lg{
@@ -281,6 +287,18 @@ input[type="text"].form-control{
 .hdpi.pac-logo:after {
     display: none;
     background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png);
+}
+.profile-preview-container{
+	position: relative;	
+	padding-left: 80px;
+	min-height: 60px;
+}
+.profile-preview-container img.dp{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 60px;
+	width: 60px;
 }
 
 
