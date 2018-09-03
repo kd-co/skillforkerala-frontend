@@ -18,12 +18,16 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
+  position: relative;
+  top: 2px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check-filled:before {
+  content: "\e902";
+}
 .icon-info:before {
   content: "\e901";
 }
