@@ -1,0 +1,42 @@
+<div class="container mb60 animated fadeIn fast">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="brand-header brand-header-md serif-bold">Contact Anoop</h1>
+				</div>
+			</div>
+			<div class="row mt60">
+				<div class="col-md-12">
+
+					<div class="profile-preview-container mb60">
+						<img src="assets/img/dp.jpg" class="dp circular">
+						<h4 class="section-desc-lg font-bold m0 mb10 c-grey-dark relative t5">Anoop Sethumadhavan</h4>
+						<p class="section-desc-md c-grey-semi-dark">Product Designer & UI Developer, Bengaluru</p>
+					</div>
+				</div>
+				<div class="col-md-12 pledge-desc-container c-grey-semi-dark">
+					<span class="pledge-desc-help-text mb15 animated fadeIn faster" *ngIf="helpText">
+						<span class="icon-info mr5"></span>
+						<span *ngIf="error"></span>
+						<span *ngIf="!error">
+							{{helpText}}
+						</span>
+					</span>
+					<p class="pledge-desc relative">
+						<textarea rows="7" class="form-control pledge-desc-input" placeholder="Start typing your message here..." (focus)="showHelpText('Use this space to send your project details to Anoop. Try to be as descriptive as possible.')" (blur)="hideHelpText()"></textarea>
+					</p>
+				</div>
+			</div>
+			<div class="row mt40">
+				<div class="col-md-3">
+					<a class="btn btn-primary">
+						Send
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

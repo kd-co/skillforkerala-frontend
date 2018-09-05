@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountCreatedComponent } from './account-created/account-created.component';
+import { SendMessageComponent } from './send-message/send-message.component';
 
 const routes: Routes = [
   {
     path: 'profile-created',
     component: AccountCreatedComponent,
+  },
+  {
+    path: 'send-message/:profile-id',
+    component: SendMessageComponent,
   },
 ];
 
