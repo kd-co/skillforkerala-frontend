@@ -12,7 +12,7 @@ import { PledgeComponent } from './pledge/pledge.component';
     CoreModule,
     // SharedModule,
     BrowserModule,
-    // FormsModule,
+    FormsModule,
     // ReactiveFormsModule,
     HomeRoutingModule,
   ],

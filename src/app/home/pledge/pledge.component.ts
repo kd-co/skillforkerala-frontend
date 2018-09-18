@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-pledge',
@@ -12,9 +14,11 @@ export class PledgeComponent {
   error: string = null;
   helpText: string = null;
 
+  PLEDGE_PROFILE_URL = `${environment.token_auth_config.apiBase}/profiles/`;
+
   skills_list = ['Sales','Sketching','Spacing','Storyboard creation','Strategic thinking','Teamwork','Time management','Typography','Usability','Verbal communications','Vision','Visual communications','Visual problem solving','Working collaboratively','Working independently','Writing','Written communications','Negotiation','Networking','Organizational','Patience with customers and staff','Perceptive about client needs','Photography','Photoshop','Planning','PowerPoint','Presentation','Print design','Printing','Prioritizing','Problem-solving','Production','Project management','Proofreading','Quark','QuarkXpress','Representing ideas visually','Deadline management','Decision making','Design','Design strategy','Digital print','Dreamweaver','Establishing rapport','Estimating costs','Excel','Flash','Flexibility','HTML','Illustration','Initiative','Interpersonal','iWork Keynote','Layout','Listening ','Marketing','Multitasking','Accurate','Adobe Acrobat','Adobe Creative Suite','Adobe Flash','Adobe Illustrator','Adobe InDesign','Adobe Photoshop','Aesthetic sense','Analytical','Arithmetic','Assertiveness','Attention to detail','Color sense','Color theory','Communication','Composition','Confidence','Consultation','Creating Logos','Creative thinking','Creativity','Critical thinking','CSS','Customer service'];
 
-  constructor() {
+  constructor(private http: Http) {
   }
 
   ngOnInit(): void {
@@ -23,6 +27,10 @@ export class PledgeComponent {
 
   ngAfterViewInit(){
 
+  }
+
+  pledge(){
+  	// user.update_attributes(unique_session_id: "")
   }
 
 	increaseArrayElement(e) {
